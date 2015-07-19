@@ -1,0 +1,49 @@
+html, body {
+  background-color: #EDE2C9;
+  color: #211612; }
+
+#image-gallery .item {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+  transition: all 0.5s ease-in; }
+  #image-gallery .item .slide {
+    background-color: #211612;
+    color: #EDE2C9;
+    font-family: 'League Script', cursive;
+    font-size: 1.8em;
+    margin: 0 -15px;
+    padding: 15px 0 5px;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in; }
+  #image-gallery .item:hover .slide {
+    transform: translateY(0); }
+  #image-gallery .item.item-1 {
+    background-image: url("../images/coffee-1.jpg"); }
+  #image-gallery .item.item-2 {
+    background-image: url("../images/coffee-2.jpg"); }
+  #image-gallery .item.item-3 {
+    background-image: url("../images/coffee-3.jpg"); }
+  #image-gallery .item.item-4 {
+    background-image: url("../images/coffee-4.jpg"); }
+  #image-gallery .item.item-5 {
+    background-image: url("../images/coffee-5.jpg"); }
+  #image-gallery .item.item-6 {
+    background-image: url("../images/coffee-6.jpg"); }
+  #image-gallery .item.item-7 {
+    background-image: url("../images/coffee-7.jpg"); }
+  #image-gallery .item.item-8 {
+    background-image: url("../images/coffee-8.jpg"); }
+  #image-gallery .item.item-9 {
+    background-image: url("../images/coffee-9.jpg"); }
+  #image-gallery .item.item-10 {
+    background-image: url("../images/coffee-10.jpg"); }
+  #image-gallery .item.item-11 {
+    background-image: url("../images/coffee-11.jpg"); }
+  #image-gallery .item.item-12 {
+    background-image: url("../images/coffee-12.jpg"); }
+
+/*# sourceMappingURL=main.css.map */

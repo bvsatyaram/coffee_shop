@@ -1,0 +1,42 @@
+$font-color: #211612;
+$bg-color: #EDE2C9;
+
+html, body {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+#image-gallery {
+  .item {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+
+    .slide {
+      background-color: $font-color;
+      color: $bg-color;
+      font-family: 'League Script', cursive;
+      font-size: 1.8em;
+      margin: 0 -15px;
+      padding: 15px 0 5px;
+      text-align: center;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in;
+    }
+
+    &:hover {
+      .slide {
+        transform: translateY(0);
+      }
+    }
+
+    @for $i from 1 through 12 {
+      &.item-#{$i} {
+        background-image: url('../images/coffee-#{$i}.jpg');   
+      }
+    }
+  }
+}
